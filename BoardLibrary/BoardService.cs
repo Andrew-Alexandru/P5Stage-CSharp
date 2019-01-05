@@ -39,16 +39,21 @@ namespace BoardLibrary
         {
             if (post != null)
             {
-
+                foreach (Post postm in posts)
+                {
+                    if (postm.postMessage.Equals(post))
+                    {
+                        deletePostByPost(postm);
+                    }
+                }
             }
             return false;
-        }
-
+        }           
         public bool sortByUser(User user)
         {
             if (user != null)
             {
-
+                sortByUser(user);
             }
             return false;
         }
