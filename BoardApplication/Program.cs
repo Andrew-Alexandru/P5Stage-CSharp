@@ -10,6 +10,7 @@ namespace BoardApplication
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello");
         }
     }
 }
