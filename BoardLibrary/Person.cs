@@ -8,7 +8,6 @@ namespace BoardLibrary
 {
     public class Person
     {
-
         public virtual string FullName
         {
             get
@@ -16,17 +15,16 @@ namespace BoardLibrary
                 return $"{FirstName} {LastName}";
 
             }
-
         }
+
         // ToString() is virtual in object class
         // and every class in C# derives from object
         public override string ToString()
 
         {
-
             return FullName;
-
         }    
+
         // default value is null
         private string firstName;
         public string FirstName
@@ -71,7 +69,7 @@ namespace BoardLibrary
             }
 
         }
-        public Person() : this("Popescu", "Ion", DateTime.Now)
+        private Person() : this("Popescu", "Ion", DateTime.Now)
         {
 
 
