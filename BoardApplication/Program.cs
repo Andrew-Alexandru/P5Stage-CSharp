@@ -51,8 +51,6 @@ namespace BoardApplication
             int day = int.Parse(Console.ReadLine());
             return users.AddUser(UserEmail, firstName, lastName, new DateTime(year, month, day));
         }
-
-
         static void Main(string[] args)
         {
             users = new UsersService();
@@ -83,17 +81,12 @@ namespace BoardApplication
                         UpdateStudentById();
                         break;
                         */
-
                     case 6:
-
                         return;
-
                     default:
-
                         Console.WriteLine("Invalid option. Try again!");
-
                         break;
-
+                   
                 }
                 Console.WriteLine();
 
